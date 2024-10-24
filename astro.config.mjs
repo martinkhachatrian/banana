@@ -7,6 +7,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://martinkhachatrian.github.io',
-	base: '/banana/',
+	base: '/banana',
+	trailingSlash: 'ignore',
 	integrations: [mdx(), sitemap()],
 });
